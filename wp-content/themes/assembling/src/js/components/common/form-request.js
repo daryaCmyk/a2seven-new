@@ -170,11 +170,11 @@ function indexForm() {
 			let message = formsTarget.querySelector('.contact-field__input[name="message"]');
 			let file = formsTarget.querySelector('.contact-field__file');
 
-			button.classList.add('disabled');
-
-			if (validateEmail(email) && names.value.length !== 0) {
-				button.classList.remove('disabled');
-			}
+			// button.classList.add('disabled');
+			//
+			// if (validateEmail(email) && names.value.length !== 0) {
+			// 	button.classList.remove('disabled');
+			// }
 
 	        button.addEventListener('click', async event => {
 
