@@ -41,7 +41,7 @@ if(get_field('form-footer__title', $args['id'])) $title = get_field('form-footer
         <?php endif;?>
     </div>
     <div class="contact-btn__wrap">
-            <button type="submit" onclick="ym(94778377, 'reachGoal', 'sentform'); return true;" class="contact-form__button btn-black disabled">
+            <button type="submit" onclick="ym(94778377, 'reachGoal', 'sentform'); return true;" class="contact-form__button btn-black">
                 <span><?php the_field('btn-send-consultation', 'option'); ?></span>
             </button>
             <?php if(get_field('field-file', 'option')): ?>
