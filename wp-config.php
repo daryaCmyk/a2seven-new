@@ -21,13 +21,13 @@
 // ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
 
 /** The name of the database for WordPress */
-define( 'DB_NAME', 'a2seven-com');
+define( 'DB_NAME', 'wp_website_new');
 
 /** MySQL database username */
-define( 'DB_USER', 'root');
+define( 'DB_USER', 'wp_website');
 
 /** MySQL database password */
-define( 'DB_PASSWORD', 'root');
+define( 'DB_PASSWORD', 'yafdatirtavDethHehot');
 
 /** MySQL hostname */
 define( 'DB_HOST', 'host.docker.internal');
