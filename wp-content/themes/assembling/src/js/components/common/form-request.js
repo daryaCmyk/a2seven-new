@@ -158,63 +158,30 @@ function checkValid(names, email) {
 
 function indexForm() {
 	const form = document.querySelectorAll('.contact-form');
-	if( !form ) return
 
-    if( form ) {
-    	for(var i = 0; i < form.length; i++){
-	        const button = form[i].querySelector('.contact-form__button');
-	        const formsTarget = form[i];
+	if (!form) return;
+
+	if (form) {
+		for (var i = 0; i < form.length; i++) {
+			const button = form[i].querySelector('.contact-form__button');
+			const formsTarget = form[i];
 			let names = formsTarget.querySelector('.contact-field__input[name="name"]');
 			let email = formsTarget.querySelector('.contact-field__input[name="email"]');
 			let phone = formsTarget.querySelector('.contact-field__input[name="phone"]');
 			let message = formsTarget.querySelector('.contact-field__input[name="message"]');
 			let file = formsTarget.querySelector('.contact-field__file');
 
-			// button.classList.add('disabled');
-			//
-			// if (validateEmail(email) && names.value.length !== 0) {
-			// 	button.classList.remove('disabled');
-			// }
-
-	        button.addEventListener('click', async event => {
-
-	            event.preventDefault();
-	            let url = '/feadback/ajax.php';
-	            let data = new FormData(formsTarget);
+			button.addEventListener('click', async event => {
+				event.preventDefault();
+				let url = '/feadback/ajax.php';
+				let data = new FormData(formsTarget);
 				let resp;
-
 				let result = false;
-	            formsTarget.classList.add('loading');
+
+				formsTarget.classList.add('loading');
 				button.classList.add('disabled');
 
-                const div = document.createElement("div");
-                div.classList.add('form-status');
-                div.classList.add('form-status--smaller');
-                div.classList.add('form-status--transparent');
-                div.innerHTML = `
-                    <div class="preloader">
-                        <div class="preloader__item preloader__item-1"></div>
-                        <div class="preloader__item preloader__item-2"></div>
-                        <div class="preloader__item preloader__item-3"></div>
-                        <div class="preloader__item preloader__item-4"></div>
-                        <div class="preloader__item preloader__item-5"></div>
-                        <div class="preloader__item preloader__item-6"></div>
-                        <div class="preloader__item preloader__item-7"></div>
-                        <div class="preloader__item preloader__item-8"></div>
-                    </div>
-                `;
-
-                button.appendChild(div);
-
-				// let names = formsTarget.querySelector('.contact-field__input[name="name"]');
-				// let email = formsTarget.querySelector('.contact-field__input[name="email"]');
-				// let phone = formsTarget.querySelector('.contact-field__input[name="phone"]');
-				// let message = formsTarget.querySelector('.contact-field__input[name="message"]');
-				// let file = formsTarget.querySelector('.contact-field__file');
-
-
-				if((names.value.length !== 0) && validateEmail(email) && !file.classList.contains('error')){
-
+				if (validateEmail(email) && names.value.length !== 0 && !file.classList.contains('error')) {
 					if (phone.value.trim() === '') {
 						phone.value = '-';
 						data.set('phone', phone.value);
@@ -226,46 +193,55 @@ function indexForm() {
 					}
 
 					result = true;
-					if(formsTarget.classList.contains('crm')) {
-						resp = await makeRequest('POST','/feadback/feedback.php' , data, false);
-						console.log(resp)
+
+					if (formsTarget.classList.contains('crm')) {
+						resp = await makeRequest('POST', '/feadback/feedback.php', data, false);
+						console.log(resp);
 					} else {
 						data.append('link', window.location.href);
 						data.append('lang', document.querySelector('html').dataset.langOrder);
-
-						if(document.querySelector('.text-page') && document.querySelector('.text-page').classList.contains('subvacancy-page')) {
+						if (document.querySelector('.text-page') && document.querySelector('.text-page').classList.contains('subvacancy-page')) {
 							data.append('vacancy', document.querySelector('.page-title').textContent);
 						}
 						resp = await makeRequest('POST', url, data, false);
 					}
-				}else{
+				} else {
 					formsTarget.classList.remove('loading');
 					checkValid(names, email);
 				}
 
 				button.classList.remove('disabled');
-                div.remove();
 
-	            if(result == true){
+				if (result === true) {
 					let title = formsTarget.parentElement.querySelector('.section-title');
 					title.textContent = window.formTitle;
-	            	formsTarget.classList.add('send-ok');
+					formsTarget.classList.add('send-ok');
 					formsTarget.parentElement.parentElement.classList.add('send');
-
 					formsTarget.innerHTML = `
-						<div class="send-ok__title-wrap">
-							<svg xmlns="http://www.w3.org/2000/svg" class="send-ok__svg" viewBox="-105 197 400 400"><g><title>Shape</title><path id="Path-0" class="st0" d="M95 570.8c-95.8 0-173.8-78-173.8-173.8 0-95.8 77.9-173.8 173.8-173.8s173.8 78 173.8 173.8c0 95.8-78 173.8-173.8 173.8zM95 197c-110.3 0-200 89.7-200 200s89.7 200 200 200 200-89.7 200-200-89.7-200-200-200z"></path><g><title>Shape</title><path id="Path-1" class="st0" d="M167.4 331.5L64.3 434.6 22.6 393c-5.1-5.1-13.4-5.1-18.5 0s-5.1 13.4 0 18.5l51 51c2.6 2.6 5.9 3.8 9.3 3.8s6.7-1.3 9.3-3.8L186 350.1c5.1-5.1 5.1-13.4 0-18.5-5.2-5.2-13.5-5.2-18.6-.1z"></path></g></g></svg> 
-							<p class="send-ok__title">${window.formTitle2}</p>
-						</div>
-						<p class="send-ok__text">${window.formText}</p>`;
+                       <div class="send-ok__title-wrap">
+                           <svg xmlns="http://www.w3.org/2000/svg" class="send-ok__svg" viewBox="-105 197 400 400">
+                               <g>
+                                   <title>Shape</title>
+                                   <path id="Path-0" class="st0" d="M95 570.8c-95.8 0-173.8-78-173.8-173.8 0-95.8 77.9-173.8 173.8-173.8s173.8 78 173.8 173.8c0 95.8-78 173.8-173.8 173.8zM95 197c-110.3 0-200 89.7-200 200s89.7 200 200 200 200-89.7 200-200-89.7-200-200-200z"></path>
+                                   <g>
+                                       <title>Shape</title>
+                                       <path id="Path-1" class="st0" d="M167.4 331.5L64.3 434.6 22.6 393c-5.1-5.1-13.4-5.1-18.5 0s-5.1 13.4 0 18.5l51 51c2.6 2.6 5.9 3.8 9.3 3.8s6.7-1.3 9.3-3.8L186 350.1c5.1-5.1 5.1-13.4 0-18.5-5.2-5.2-13.5-5.2-18.6-.1z"></path>
+                                   </g>
+                               </g>
+                           </svg>
+                           <p class="send-ok__title">${window.formTitle2}</p>
+                       </div>
+                       <p class="send-ok__text">${window.formText}</p>`;
 
 					formsTarget.classList.remove('loading');
-	            }else{
-	                formsTarget.classList.remove('loading');
-	            }
-	        })
-	    }
-    }
+				} else {
+					formsTarget.classList.remove('loading');
+				}
+			});
+		}
+	}
 }
+
+indexForm();
 
 indexForm()
