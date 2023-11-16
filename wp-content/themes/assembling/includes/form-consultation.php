@@ -5,7 +5,7 @@ if(get_field('form-footer__title', $args['id'])) $title = get_field('form-footer
  $titleMails = strip_tags($title);
  $formType = get_field('path-send', 'option');
  ?>
-<form action="callback" class="contact-form <?php echo $formType; ?>" enctype="multipart/form-data">
+<form action="callback" type="submit" onsubmit="ym(94778377, 'reachGoal', 'sentform'); return true;" class="contact-form <?php echo $formType; ?>" enctype="multipart/form-data">
     <?php if($formType == 'mail'): ?>
         <input type='hidden' name='title' value='<?php echo $titleMails; ?>'>
         <input type='hidden' name='link' value='<?php echo bloginfo( 'url' ); echo $_SERVER['REQUEST_URI']; ?>'>
@@ -41,7 +41,7 @@ if(get_field('form-footer__title', $args['id'])) $title = get_field('form-footer
         <?php endif;?>
     </div>
     <div class="contact-btn__wrap">
-            <button type="submit" onclick="ym(94778377, 'reachGoal', 'sentform'); return true;" class="contact-form__button btn-black">
+            <button type="submit" class="contact-form__button btn-black">
                 <span><?php the_field('btn-send-consultation', 'option'); ?></span>
             </button>
             <?php if(get_field('field-file', 'option')): ?>
