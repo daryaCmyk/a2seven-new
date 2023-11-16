@@ -5,7 +5,7 @@ if(get_field('form-footer__title', $args['id'])) $title = get_field('form-footer
  $titleMails = strip_tags($title);
  $formType = get_field('path-send', 'option');
  ?>
-<form action="callback" type="submit" onsubmit="ym(94778377, 'reachGoal', 'sentform'); return true;" class="contact-form <?php echo $formType; ?>" enctype="multipart/form-data">
+<form action="callback" method="post" type="submit" onsubmit="ym(94778377, 'reachGoal', 'sentform'); return true;" class="contact-form <?php echo $formType; ?>" enctype="multipart/form-data">
     <?php if($formType == 'mail'): ?>
         <input type='hidden' name='title' value='<?php echo $titleMails; ?>'>
         <input type='hidden' name='link' value='<?php echo bloginfo( 'url' ); echo $_SERVER['REQUEST_URI']; ?>'>
