@@ -1,0 +1,188 @@
+
+.header {
+    background: #fff;
+    z-index: 222;
+    position: sticky;
+    top: -1px;
+    transition: all .5s;
+
+    &.hide {
+        top: -100%;
+        transition: all .5s;
+    }
+
+    @media (min-width: 993px) {
+        height: rem(110);
+    }
+
+    &__wrapper {
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
+        max-width: 1920px;
+        margin: 0 auto;
+        width: 100%;
+        padding-left: rem(30);
+        max-width: 1920px;
+    }
+
+    &-btn {
+        padding: rem(43) rem(52) rem(40);
+        @include font-btn-black;  
+    }
+    
+}
+
+.logo {
+    width: rem(61);
+    height: rem(55);
+    display: block;
+    &__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.header-menu {
+    margin-left: auto;
+    margin-right: rem(35);
+
+    @media (max-width: 1279px) {
+        margin-right: calcFluid(10, 27, 992, 1279);
+    }
+
+    > ul {
+        > li {
+            > a {
+                padding: rem(41) rem(33) rem(42);
+
+                @media (max-width: 1279px) {
+                    padding-left: calcFluid(15, 27, 992, 1279);
+                    padding-right: calcFluid(15, 27, 992, 1279);
+                }
+
+                span {
+                    position: relative;
+                    &:after {
+                        // height: 4px !important;
+                        // background: $color2 !important;
+                        border-bottom: 4px solid $color2 !important;
+                    }
+                }
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+        li {
+            &.current-menu-parent  {
+                & > a span:after {
+                    transform: scaleX(1);
+                    transform-origin: left; 
+                }
+            }
+
+            &.current-menu-item {
+                & > a span:after {
+                    transform: scaleX(1);
+                    transform-origin: left; 
+                }
+            }
+
+            a {
+                font-size: rem(20);
+                font-weight: 600;
+                line-height: rem(27);
+                color: $color1;
+                transition: color .3s;
+                display: block;
+
+                span {
+                    position: relative;
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        bottom: -4px;
+                        width: 100%;
+                        height: 100%;
+                        left: 0;
+                        // background: #272727;
+                        //transition: ease $transition;
+                        transform-origin: right;
+                        transition: transform .4s ease-in-out;
+                        transform: scaleX(0);
+                        border-bottom: 2px solid #272727;
+                    }
+                }
+
+                @media (min-width: 1024px) {
+                    &:hover {
+                        span:after {
+                            transform: scaleX(0.99);
+                            transform-origin: left; 
+                        }
+                    }
+                }
+            }
+            .sub-menu {
+                display: none;
+                position: absolute;
+                z-index: 99;
+                top: 100%;
+                left: rem(35);
+                padding: rem(25) rem(25) rem(31);
+                width: max-content;
+                min-width: rem(200);
+                background: #fff;
+                box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.12);
+                li {
+                    &:first-child a {
+                       padding-top: 0;
+                    }
+
+                    a {
+                        padding: rem(9) 0;
+                    }
+                }
+            }
+            &.menu-item-has-children {
+                position: relative;
+                &:hover {
+                    .sub-menu {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media(max-width: 992px) {
+    .header {
+        position: sticky;
+        top: 0;
+        &__wrapper {
+            justify-content: space-between;
+            align-items: inherit;
+        }
+
+        .header-btn {
+            display: none;
+        }
+    }
+
+    .header-menu {
+        display: none;
+    }
+    
+    .logo {
+        width: 45px;
+        height: 40px;
+        margin: 15px 0;
+    }
+}

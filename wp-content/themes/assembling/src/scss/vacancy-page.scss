@@ -1,0 +1,119 @@
+@import 'includes/variables';
+@import 'includes/mixins';
+
+.vacancy {
+    &-page {
+        margin-bottom: rem(100);
+
+        @media (max-width: 1279px) {
+            margin-bottom: calcFluid(30, 100, 375, 1920);
+        }
+    }
+
+    &-tags {
+        display: flex;
+        margin-bottom: rem(30);
+
+        @media (max-width: 1279px) {
+            margin-bottom: calcFluid(20, 30, 375, 1920);
+        }
+
+        @media (min-width: 568px) {
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 567px) {
+            overflow: auto;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            margin-right: -20px;  
+
+            &::-webkit-scrollbar {
+                    width: 0;
+                    height: 0;
+            }
+        }
+        
+
+        &__item {
+            font-weight: 600;
+            font-size: rem(24);
+            line-height: 160%;
+            color: #A5A5A5;
+            cursor: pointer;
+            transition: $transition;
+            white-space: nowrap;
+            border-bottom: 2px solid transparent;
+            height: 100%;
+
+            &:not(:last-child) {
+                margin-right: rem(30);
+                margin-bottom: rem(30);
+
+                @media (max-width: 1279px) {
+                    margin-right: calcFluid(20, 30, 375, 1920);
+                    margin-bottom: calcFluid(20, 30, 375, 1920);
+                }
+            }
+
+            &.tags-item--active {
+                color: #272727;
+            }
+
+            @media (min-width: 1024px) {
+                &:not(.tags-item--active):hover {
+                    color: #272727;
+                    border-color: #272727;
+                }
+            }
+
+            @media (max-width: 567px) {
+                &:last-child {
+                    margin-right: calcFluid(20, 30, 375, 1920);
+                }
+            }
+        }
+    }
+
+    $this:&;
+
+    &-item {
+        padding: rem(53) 0 rem(57);
+        border-top: 1px solid $color4;
+        display: block;
+        &:last-child {
+            border-bottom: 1px solid $color4;
+        }
+
+        @media (max-width: 1279px) {
+            padding: calcFluid(25, 53, 375, 1920) 0 calcFluid(25, 57, 375, 1920);
+        }
+
+        @media (min-width: 1024px) {
+            &:hover {
+                #{$this}-title {
+                    color: $color2;
+                }
+                #{$this}-tag {
+                    color: $color2;
+                }
+            }
+        }
+    }
+
+    &-title {
+        @include font-h1;
+        transition: $transition;
+    }
+
+    &-tag {
+        @include font-h5;
+        color: #A5A5A5;
+        margin-top: rem(17);
+        transition: $transition;  
+
+        @media (max-width: 1279px) {
+            margin-top: calcFluid(10, 17, 375, 1920);
+        }
+    }
+}

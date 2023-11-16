@@ -1,0 +1,118 @@
+.section-project {
+    margin-bottom: rem(140);
+
+    @media (max-width: 1279px) {
+        margin-bottom: calcFluid(80, 140, 375, 1920);
+    }
+
+    .section-title {
+        margin-bottom: rem(60);
+
+        @media (max-width: 1279px) {
+            margin-bottom: calcFluid(40, 60, 375, 1920);
+        }
+    }
+}
+
+.project {
+    &-grid {
+        columns: 2;
+        column-gap: 18%;
+        row-gap: rem(80);
+        margin-bottom: rem(-80);
+
+        @media (max-width: 1279px) {
+            column-gap: calcFluid(40, 248, 767, 1920);
+            margin-bottom: calcFluid(-40, -80, 375, 1920);
+        }
+    }
+
+    &-item {
+        display: block;
+        overflow: hidden;
+        -webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
+        break-inside: avoid-column;
+        padding-bottom: rem(80);
+
+        @media (max-width: 1279px) {
+            padding-bottom: calcFluid(40, 80, 375, 1920);
+        }
+
+        $this: &;
+
+        &__img {
+            width: 100%;
+            background-size: cover;
+            margin-bottom: rem(40);
+            @media (max-width: 1279px) {
+                margin-bottom: calcFluid(20, 40, 375, 1920);
+            }
+        }
+
+        &:nth-child(2), &:nth-child(3) {
+            #{$this}__img {
+                height: rem(354);
+
+                @media (max-width: 1279px) {
+                    height: calcFluid(211, 354, 375, 1920);
+                }
+            }
+        }
+
+        &:nth-child(1), &:nth-child(4) {
+            #{$this}__img {
+                height: rem(700);
+
+                @media (max-width: 1279px) {
+                    height: calcFluid(410, 700, 375, 1920);
+                }
+            }
+        }
+
+        &__title {
+            @include font-h4;
+            line-height: normal;
+            transition: $transition;
+            display: inline;
+            border-bottom: 2px solid transparent;
+        }
+
+        &__tag {
+            padding: rem(6) rem(12);
+            background: rgba(241, 241, 241, 0.6);
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: rem(16);
+            line-height: 160%;
+            color: #272727;
+            margin-bottom: rem(10);
+            text-transform: uppercase;
+
+            &-wrap {
+                padding: rem(40) rem(19);
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            &:not(:last-child) {
+                margin-right: rem(10);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            &:hover {
+                #{$this}__title {
+                    border-color: #272727;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .project-grid {
+        columns: 1;
+    }
+}

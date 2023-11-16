@@ -1,0 +1,154 @@
+.mobile-menu-open {
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    display: none;
+	padding: 0 19px;
+	background: #121212;
+   
+	$this: &;
+	&__button {
+		width: 32px;
+		height: 3px;
+		background-color: #FFFFFF;
+		&:after {
+			content: "";
+			display: block;
+			width: 100%;
+			left: 0;
+			height: 3px;
+			background-color: #FFFFFF;
+			position: absolute;
+			top: 0;
+			transition: .3s;
+		}
+		&:before {
+			content: "";
+			display: block;
+			width: 100%;
+			left: 0;
+			height: 3px;
+			background-color: #FFFFFF;    
+			position: absolute;
+			bottom: 0;
+			transition: .3s;
+		}
+	}
+
+	&__wrap {
+		position: relative;
+		width: 32px;
+		height: 21px;
+		display: flex;
+		align-items: center;
+    	justify-content: center;
+	}
+
+	&.active {
+		#{ $this }__button {
+			background-color: transparent;
+			&:after {
+				transform: rotate(-45deg);
+				bottom: 0;
+				margin: auto;
+			}
+			&:before {
+				transform: rotate(45deg);
+				top: 0;
+				margin: auto;
+			}
+		}
+	}
+}
+
+
+.mobile-menu {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    height: calc(100% - 70px);
+    z-index: 600;
+    background-color: #fff;  
+    overflow-y: auto;
+    overflow-x: hidden;
+    left: 100%;
+	transition: all .3s linear;
+	flex-direction: column;
+	display: flex;
+	&__wrapper {
+		padding-top: 10px;
+		flex: 1;
+	}
+	&.opened, &.active, .nav_close.opened{
+		left: 0;
+	}
+	li {
+		padding: 0 20px;
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			transition: .2s;
+			padding: 20px 0;
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 120%;
+			color: #272727;
+
+			> svg {
+				width: 12px;
+				height: 12px;
+				fill: #121212;
+				transition: $transition;
+				pointer-events: none;
+			}
+		}
+
+		&.spoiler--active {
+			a > svg {
+				transform: rotate(45deg);
+			}
+		}
+	}
+	.sub-menu {
+		overflow: auto;
+		width: 100%;
+		background-color: #fff;
+		z-index: 1;
+		transition: .3s;
+		display: block;
+		overflow: hidden;
+		-webkit-transition: height .7s;
+		transition: height .7s;
+		padding: 0 20px;  
+
+		&.is-collapsed {
+			height: 0;
+		}
+
+		li {
+			a {
+				font-weight: 600;
+				font-size: 16px;
+				line-height: 120%;
+				color: #272727;
+				padding: 15px 0;
+			}
+		}
+	}
+
+	.header-btn {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 40px;
+	}
+}
+
+@media(max-width: 992px) {
+	.mobile-menu-open {
+		display: flex;
+	}
+}

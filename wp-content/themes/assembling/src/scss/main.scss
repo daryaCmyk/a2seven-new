@@ -1,0 +1,35 @@
+@import 'includes/variables';
+@import 'includes/mixins';
+
+// @import './general';
+// @import './post';
+
+
+
+
+// styles
+
+@import 'components/pages/index-page/section-slider';
+@import 'components/pages/index-page/section-seo';
+@import 'components/pages/index-page/section-about';
+@import 'components/pages/index-page/section-service';
+@import 'components/pages/index-page/section-technologies';
+@import 'components/pages/index-page/section-company';
+@import 'components/pages/index-page/section-project';
+@import 'components/pages/index-page/section-rating';
+@import 'components/pages/index-page/section-reviews';
+
+.index-page {
+    section:not(.section-reviews) {
+        overflow: hidden;
+    }
+}
+
+// @import 'components/pages/index';
+// @import 'components/pages/page-404';
+// @import 'components/pages/page-contacts';
+// @import 'components/pages/page-search';
+
+
+
+

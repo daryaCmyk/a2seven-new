@@ -1,0 +1,52 @@
+@import 'includes/variables';
+@import 'includes/mixins'; 
+
+.contact {
+	&__text {
+		@include font-p;
+
+		&.link-email {
+			font-weight: 700;
+		}
+
+		&.link {
+			transition: $transition;
+			border-bottom: 2px solid transparent;
+			@media (min-width: 1024px) {
+				&:hover {
+					border-color: #272727;
+				}
+			}
+		}
+	}
+
+	&:not(:last-child) {
+		margin-bottom: rem(60);
+
+		@media (max-width: 1279px) {
+			margin-bottom: calcFluid(30, 60, 375, 1920);
+		}
+	}
+}
+
+.contact-wrap {
+	margin-top: 25px;
+}
+
+.section-form .contacts .row {
+	align-items: flex-start;
+
+	.col-md-3 {
+		padding: 0 10px;
+	}
+}
+
+@media (max-width: 767px) {
+	.contact-wrap {
+		margin-top: 60px;
+	}
+
+	.section-form .contacts .row .col-md-3 {
+		padding: 0;
+	}
+}

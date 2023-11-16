@@ -1,0 +1,20 @@
+.section-seo {
+    margin-bottom: rem(140);
+
+    @media (max-width: 1279px) {
+        margin-bottom: calcFluid(80, 140, 375, 1920);
+    }
+
+    &__btn {
+        padding: rem(25) rem(46);
+        width: fit-content; 
+        margin-top: rem(60);
+        display: block;
+        font-size: rem(18);
+
+        @media (max-width: 1279px) {
+            margin-top: calcFluid(40, 60, 375, 1920);
+            padding: 25px 46px;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/*
+	Theme Name: My-site
+	Version: 1.0.0
+	Theme URI: http://a2seven.com/
+	Description: A2SEVEN Software development
+	Author: A2SEVEN
+	Author URI: http://a2seven.com/
+*/
+
+
+
+
+
+
+/* @import 'static/css/vendors.min.css' screen;
+@import 'static/css/main.css' screen; */
+
+ 
+ /* Added by Anton */
+.container-large .post-image {
+	margin: -100px 0;
+}
+.service__title.link {
+	display: inline-block;
+}
+.content-image .container-large {
+	padding: 0;
+	max-width: unset;
+	width: 100vw;
+}

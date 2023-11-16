@@ -1,0 +1,1032 @@
+# Translation of Plugins - User Access Manager - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - User Access Manager - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2023-07-25 10:30:35+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.0-alpha.4\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - User Access Manager - Stable (latest release)\n"
+
+#: includes/language.php:236
+msgid "Failure on User Access Manager database update"
+msgstr "Сбой при обновлении базы данных User Access Manager"
+
+#: includes/language.php:162
+msgid "To login page (wp-admin)"
+msgstr "Перейти на страницу входа (wp-admin)"
+
+#: includes/language.php:21
+msgid "The following error occurred: %s"
+msgstr "Произошла следующая ошибка: %s"
+
+#: includes/language.php:174
+msgid "Hides the edit link if the user has no write access."
+msgstr "Скрывает ссылку редактирования, если пользователь не имеет доступа на запись."
+
+#: includes/language.php:173
+msgid "Hide edit link on no access"
+msgstr "Скрыть ссылку редактирования без доступа"
+
+#: includes/language.php:112
+msgid "XSendfile"
+msgstr "XSendfile"
+
+#: includes/language.php:109
+msgid "These files (comma separated) will be shown within the browser window and not downloaded (images are always inline)."
+msgstr "Эти файлы (разделенные запятыми) будут отображаться в окне браузера и не загружаются (изображения всегда встроены)."
+
+#: includes/language.php:108
+msgid "Inline file types"
+msgstr "Типы встроенных файлов"
+
+#: includes/language.php:94
+msgid "Wordpress"
+msgstr "Wordpress"
+
+#: includes/language.php:92
+msgid "Locked directory type"
+msgstr "Тип заблокированного каталога"
+
+#: includes/language.php:90
+msgid "Edit this content if you are using the custom file handling file setting."
+msgstr "Отредактируйте этот контент, если вы используете настройку файла настраиваемых файлов."
+
+#: includes/language.php:89
+msgid "Custom file handling file"
+msgstr "Файл обработки пользовательского файла"
+
+#: includes/language.php:88
+msgid "Selecting \"Yes\" will allow you to use your own config file."
+msgstr "Выбор «Да» позволит вам использовать собственный файл конфигурации."
+
+#: includes/language.php:87
+msgid "Use custom file handling file"
+msgstr "Использовать пользовательский файл обработки файлов"
+
+#: includes/language.php:86 includes/language.php:96
+msgid "Custom"
+msgstr "Произвольно"
+
+#: includes/language.php:84
+msgid "If you choose \"Custom\", please specify the full path to your image."
+msgstr "Если вы выберете «Пользовательский», укажите полный путь к вашему изображению."
+
+#: includes/language.php:83
+msgid "No access image type"
+msgstr "Нет типа изображения доступа"
+
+#: includes/language.php:54
+msgid "Lock comments"
+msgstr "Блокировать комментарии"
+
+#: includes/language.php:27
+msgid "None"
+msgstr "Нет"
+
+#: includes/language.php:25
+msgid "All users (group and none group users)"
+msgstr "Все пользователи (группы и пользователи вне групп)"
+
+#: includes/language.php:24 includes/language.php:95 includes/language.php:99
+msgid "All"
+msgstr "Все"
+
+#: includes/language.php:245
+msgid "<b style=\"color:green;\">Your UAM database seems to be in good condition.</b>"
+msgstr "<b style=\"color:green;\">Ваша база данных UAM находится в хорошем состоянии.</b>"
+
+#: includes/language.php:244
+msgid "<b style=\"color:red;\">Your UAM database seems broken. You should try to repair it.</b>"
+msgstr "<b style=\"color:red;\">Ваша база данных UAM кажется сломана. Вы должны попытаться восстановить её.</b>"
+
+#: includes/language.php:243
+msgid "Database repair successfull"
+msgstr "Восстановление базы данных успешно"
+
+#: includes/language.php:242
+msgid "repair now"
+msgstr "ремонт сейчас"
+
+#: includes/language.php:241
+msgid "Try to repair the database."
+msgstr "Попробуйте восстановить базу данных."
+
+#: includes/language.php:240
+msgid "Repair the database"
+msgstr "Восстановить базу данных"
+
+#: includes/language.php:45
+msgid "Selecting \"Yes\" will show the text which is defined at \"Title\" if user has no access."
+msgstr "При выборе «Да» будет отображаться текст, определенный в «Заголовке», если у пользователя нет доступа."
+
+#: includes/language.php:349
+msgid "You got stuck using the User access manager? See <a href=\"https://github.com/GM-Alex/user-access-manager/wiki\">https://github.com/GM-Alex/user-access-manager/wiki</a>"
+msgstr "У Вас есть вопросы? Смотрите <a href=\"https://github.com/GM-Alex/user-access-manager/wiki\">https://github.com/GM-Alex/user-access-manager/wiki</a>"
+
+#: includes/language.php:348
+msgid "Need help?"
+msgstr "Нужна помощь?"
+
+#: includes/language.php:346
+msgid "Get User Access Manager Pro!"
+msgstr "Получить User Access Manager Pro!"
+
+#: includes/language.php:343
+msgid "User Access Manager login widget for users."
+msgstr "User Access Manager виджет входа для пользователей."
+
+#: includes/language.php:342
+msgid "UAM login widget"
+msgstr "UAM логин виджет"
+
+#: includes/language.php:339
+msgid "Add dynamic groups"
+msgstr "Добавить динамические группы"
+
+#: includes/language.php:338
+msgid "Not logged in users"
+msgstr "Не зарегистрированы"
+
+#: includes/language.php:330 includes/language.php:332
+msgid "To"
+msgstr "До"
+
+#: includes/language.php:329 includes/language.php:331
+msgid "From"
+msgstr "От"
+
+#: includes/language.php:328
+msgid "Setup time based group assignment"
+msgstr "Назначение группы по времени установки"
+
+#: includes/language.php:320
+msgid "Welcome, %s!"
+msgstr "Добро пожаловать, %s!"
+
+#: includes/language.php:319
+msgid "Logout"
+msgstr "Выйти"
+
+#: includes/language.php:275
+msgid "Special thanks"
+msgstr "Особая благодарность"
+
+#: includes/language.php:274
+msgid "Supporters"
+msgstr "Спонсоры"
+
+#: includes/language.php:273
+msgid "Top supporters"
+msgstr "Топ спонсоров"
+
+#: includes/language.php:268
+msgid "Write about the plugin and place a link to the plugin in your blog/website."
+msgstr "Напишите о плагине и поместите ссылку на плагин в вашем блоге/на сайте."
+
+#: includes/language.php:267
+msgid "Spread the word"
+msgstr "Распространить слово"
+
+#: includes/language.php:265
+msgid "Donate via PayPal"
+msgstr "Пожертвовать через PayPal"
+
+#: includes/language.php:264
+msgid "Give other users more comfort help me to translate it to all languages. See: <a href=\"https://translate.wordpress.org/projects/wp-plugins/user-access-manager\">https://translate.wordpress.org/projects/wp-plugins/user-access-manager</a>"
+msgstr "Дайте другим пользователям больше комфорта, помогите мне перевести его на все языки. Смотрите <a href=\"https://translate.wordpress.org/projects/wp-plugins/user-access-manager\">https://translate.wordpress.org/projects/wp-plugins/user-access-manager</a>"
+
+#: includes/language.php:263
+msgid "Create a translation of the plugin"
+msgstr "Создайте перевод плагина"
+
+#: includes/language.php:261
+msgid "Help me to improve the plugin"
+msgstr "Помогите мне улучшить плагин"
+
+#: includes/language.php:221
+msgid "Taxonomy"
+msgstr "Таксономия"
+
+#: includes/language.php:220
+msgid "Post Type"
+msgstr "Тип Поста"
+
+#: includes/language.php:219
+msgid "Default user groups updated"
+msgstr "Обновлены группы пользователей по умолчанию"
+
+#: includes/language.php:218
+msgid "Update default user groups"
+msgstr "Обновление групп пользователей по умолчанию"
+
+#: includes/language.php:217
+msgid "Default user groups for object type"
+msgstr "Группы пользователей по умолчанию для типа объекта"
+
+#: includes/language.php:216
+msgid "Default user groups"
+msgstr "Группы пользователей по умолчанию"
+
+#: includes/language.php:190
+msgid "User groups"
+msgstr "Группы пользователей"
+
+#: includes/language.php:189
+msgid "Manage user groups"
+msgstr "Управление группами пользователей"
+
+#: includes/language.php:172
+msgid "Show assigned groups next to the edit link"
+msgstr "Показывать назначенные группы рядом с ссылкой на редактирование"
+
+#: includes/language.php:171
+msgid "Show assigned groups"
+msgstr "Показывать назначенные группы"
+
+#: includes/language.php:152
+msgid "PHP var_export"
+msgstr "PHP var_export"
+
+#: includes/language.php:151
+msgid "Json"
+msgstr "Json"
+
+#: includes/language.php:150
+msgid "PHP igbinary (igbinary required)"
+msgstr "PHP igbinary (требуется igbinary)"
+
+#: includes/language.php:149
+msgid "PHP serialize"
+msgstr "PHP-сериализация"
+
+#: includes/language.php:148
+msgid "The caching method which should be used."
+msgstr "Метод кеширования, который следует использовать."
+
+#: includes/language.php:147
+msgid "Method"
+msgstr "Метод"
+
+#: includes/language.php:146
+msgid "File system path to store the cache files."
+msgstr "Путь файловой системы для хранения файлов кеша."
+
+#: includes/language.php:145
+msgid "Path"
+msgstr "Путь"
+
+#: includes/language.php:144
+msgid "This cache uses the file system for the cache."
+msgstr "Этот пользовательский кеш использует файловую систему для кеша."
+
+#: includes/language.php:143
+msgid "File system cache"
+msgstr "Кэш файловой системы"
+
+#: includes/language.php:142
+msgid "The cache is currently deactivated."
+msgstr "Кэш в настоящее время отключен."
+
+#: includes/language.php:141
+msgid "Cache deactivated"
+msgstr "Кэш деактивирован"
+
+#: includes/language.php:140
+msgid "Cache settings"
+msgstr "Настройки кеша"
+
+#: includes/language.php:139
+msgid "Active caching method"
+msgstr "Метод активного кэширования"
+
+#: includes/language.php:134
+msgid "Selecting \"Yes\" will hide empty taxonomies which are containing only empty childes or no childes."
+msgstr "При выборе «Да» будут скрыты пустые таксономии, содержащие только пустые дочерние элементы или без детей."
+
+#: includes/language.php:133
+msgid "Hide empty"
+msgstr "Скрыть пустые"
+
+#: includes/language.php:59
+msgid "If selected the settings form the default type will be used."
+msgstr "Если выбрано, то будут использоваться форматы настроек по умолчанию."
+
+#: includes/language.php:58
+msgid "Use default settings for %s"
+msgstr "Настройки по умолчанию для %s"
+
+#: includes/language.php:56
+msgid "Show content before &lt;!--more--&gt; tag"
+msgstr "Показывать содержимое до &lt;!--more--&gt; тэга"
+
+#: includes/language.php:55
+msgid "Selecting \"yes\" allows users to comment even if the content is locked"
+msgstr "Выбор «да» позволяет пользователям комментировать, даже если содержимое заблокировано"
+
+#: includes/language.php:52
+msgid "Hide comments"
+msgstr "Скрыть комментарии"
+
+#: includes/language.php:50
+msgid "Comment text"
+msgstr "Текст комментария"
+
+#: includes/language.php:48
+msgid "Hide complete"
+msgstr "Скрыть полностью"
+
+#: includes/language.php:46
+msgid "Content"
+msgstr "Содержимое"
+
+#: includes/language.php:44
+msgid "Hide title"
+msgstr "Скрыть заголовок"
+
+#: includes/language.php:42
+msgid "Title"
+msgstr "Заголовок"
+
+#: includes/language.php:41
+msgid "Set up the behaviour if the object is locked"
+msgstr "Настроить поведение, если объект заблокирован"
+
+#: includes/language.php:40
+msgid "Default settings"
+msgstr "Настройки по умолчанию"
+
+#: includes/language.php:39
+msgid "Taxonomies settings"
+msgstr "Настройки таксономий"
+
+#: includes/language.php:38
+msgid "Post type settings"
+msgstr "Настройки типа сообщения"
+
+#: includes/language.php:37 includes/language.php:130
+msgid "Object type"
+msgstr "Тип объекта"
+
+#: includes/language.php:34 includes/language.php:85
+msgid "Default"
+msgstr "По умолчанию"
+
+#: includes/language.php:75
+msgid "Selecting \"yes\" also locks comments on locked %s"
+msgstr "Выбор \"да\" также заблокирует комментарии на заблокированном %s"
+
+#: includes/language.php:74
+msgid "Lock %s comments"
+msgstr "Заблокировать %s комментарии"
+
+#: includes/language.php:312
+msgid "The file you are looking for wasn't found."
+msgstr "Файл который вы ищете не найден."
+
+#: includes/language.php:295
+msgid "Nonce error"
+msgstr "Ошибка одноразового кода проверки (nonce)"
+
+#: includes/language.php:291
+msgid "No rights"
+msgstr "Нет прав"
+
+#: includes/language.php:17
+msgid "Sorry you need at least PHP version 7.2 to use the User Access Manager. Your current PHP version is %s. See <a href=\"https://github.com/GM-Alex/user-access-manager/wiki/Troubleshoot\">https://github.com/GM-Alex/user-access-manager/wiki/Troubleshoot</a> for more information."
+msgstr "Извините, для UAC вам нужно использовать PHP версии 5.4 и выше. Ваша текущая версия PHP %s. Посмотрите <a href=\"https://github.com/GM-Alex/user-access-manager/wiki/Troubleshoot\">https://github.com/GM-Alex/user-access-manager/wiki/Troubleshoot</a>, чтобы получить больше информации."
+
+#. Author URI of the plugin
+msgid "https://twitter.com/GM_Alex"
+msgstr "https://twitter.com/GM_Alex"
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/user-access-manager/"
+msgstr "https://ru.wordpress.org/plugins/user-access-manager/"
+
+#: includes/language.php:306
+msgid "Post"
+msgstr "Запись"
+
+#: includes/language.php:305
+msgid "Term"
+msgstr "Термин"
+
+#: includes/language.php:304 includes/language.php:336
+msgid "User"
+msgstr "Пользователь"
+
+#: includes/language.php:303 includes/language.php:337
+msgid "Role"
+msgstr "Роль"
+
+#: includes/language.php:282
+msgid "UAM User Groups"
+msgstr "Группы пользователей UAM"
+
+#: includes/language.php:253
+msgid "Backup deleted successfully"
+msgstr "Резервная копия удалена"
+
+#: includes/language.php:252
+msgid "delete now"
+msgstr "удалить сейчас"
+
+#: includes/language.php:251
+msgid "Choose a backup to delete. <b>Note: That cannot be undone.</b>"
+msgstr "Выберите резервную копию для удаления <b>Заметка: это действие необратимо</b> "
+
+#: includes/language.php:250
+msgid "Delete a database backup"
+msgstr "Удалить резервную копию БД"
+
+#: includes/language.php:249
+msgid "Revert successfull"
+msgstr "Откат успешен"
+
+#: includes/language.php:248
+msgid "revert now"
+msgstr "откатить сейчас"
+
+#: includes/language.php:247
+msgid "Choose a backup to revert the database to this user access manager database version. <b>Note: The user access manager database version differs from the user access manager version.</b>"
+msgstr "Выберите резервную копию для отката БД uam <b>Заметка: Эта версия БД uam отличается от версии uam</b>"
+
+#: includes/language.php:246
+msgid "Revert the database"
+msgstr "Сделать откат БД"
+
+#: includes/language.php:239
+msgid "Backup the uam database tables"
+msgstr "Сделать резервную копию таблиц uam"
+
+#: includes/language.php:233
+msgid "update now"
+msgstr "обновить сейчас"
+
+#: includes/language.php:230
+msgid "reset now"
+msgstr "сбросить сейчас"
+
+#: includes/language.php:228
+msgid "Type 'reset' in the input field to reset the User Access Manager."
+msgstr "Введите 'reset' в поле ввода для сброса User Access Manager."
+
+#: includes/language.php:226
+msgid "Danger Zone"
+msgstr "Опасная зона"
+
+#: includes/language.php:135
+msgid "Hide empty %s"
+msgstr "Спрятать пустые %s"
+
+#: includes/language.php:132
+msgid "Set up the behaviour if a taxonomy is locked"
+msgstr "Установить поведение в случае если таксономия блокирована"
+
+#: includes/language.php:131
+msgid "Taxonomy settings"
+msgstr "Настройки таксономий"
+
+#: includes/language.php:53 includes/language.php:73
+msgid "Selecting \"Yes\" will show the text which is defined at \"%s comment text\" if user has no access."
+msgstr "Выбор \"да\" покажет текст определенный в \"%s текст комментария\" если у пользователя нет доступа."
+
+#: includes/language.php:68
+msgid "Hide complete %s"
+msgstr "Спрятать полностью %s"
+
+#: includes/language.php:66
+msgid "%s content"
+msgstr "%s содержимое"
+
+#: includes/language.php:64
+msgid "Hide %s title"
+msgstr "Спрятать %s название"
+
+#: includes/language.php:62
+msgid "%s title"
+msgstr "%s название"
+
+#: includes/language.php:61
+msgid "Set up the behaviour if the %s is locked"
+msgstr "Установить поведение если %s заблокировано"
+
+#: includes/language.php:60
+msgid "%s settings"
+msgstr "%s настройки"
+
+#. Author of the plugin
+msgid "Alexander Schneider"
+msgstr "Alexander Schneider"
+
+#. Description of the plugin
+msgid "Manage the access to your posts, pages, categories and files."
+msgstr "Управляйте доступом к своим сообщениям, страницам, категориям и файлам."
+
+#. Plugin Name of the plugin
+msgid "User Access Manager"
+msgstr "User Access Manager"
+
+#: includes/language.php:322
+msgid "Lost your password?"
+msgstr "Забыли пароль?"
+
+#: includes/language.php:323
+msgid "Password Lost and Found"
+msgstr "Напоминание пороля"
+
+#: includes/language.php:321
+msgid "Register"
+msgstr "Регистрация"
+
+#: includes/language.php:324
+msgid "Remember me"
+msgstr "Запомнить меня"
+
+#: includes/language.php:317
+msgid "Password"
+msgstr "Пароль"
+
+#: includes/language.php:316
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: includes/language.php:318
+msgid "Login"
+msgstr "Войти"
+
+#: includes/language.php:311
+msgid "Error: File not found."
+msgstr "Ошибка: Файл не найден."
+
+#: includes/language.php:310
+msgid "Opening file info database failed."
+msgstr "Ошибка открытия файла базы данных."
+
+#: includes/language.php:302
+msgid "Assigned groups"
+msgstr "Назначенные группы"
+
+#: includes/language.php:301
+msgid "Group membership given by %s"
+msgstr "Членство в группе назначено %s"
+
+#: includes/language.php:300
+msgid "Group info"
+msgstr "Информация о группе"
+
+#: includes/language.php:299
+msgid "Info"
+msgstr "информация"
+
+#: includes/language.php:296
+msgid "Sorry, your nonce did not verify."
+msgstr "Извините, одноразовый код проверки не подходит."
+
+#: includes/language.php:294
+msgid "Set up user groups"
+msgstr "Настройка групп пользователей"
+
+#: includes/language.php:293
+msgid "User Groups"
+msgstr "Группы пользователей"
+
+#: includes/language.php:292
+msgid "You have no rights to access this content."
+msgstr "Вы не имеете прав доступа к этому контенту."
+
+#: includes/language.php:290
+msgid "No user group available."
+msgstr "Нет ни одной доступной группы пользователей."
+
+#: includes/language.php:289
+msgid "Please create a user group first."
+msgstr "Пожалуйста, создайте сначала группу пользователей."
+
+#: includes/language.php:288
+msgid "<strong>Note:</strong> An administrator has always access to all posts/pages."
+msgstr "<strong>Примечание:</strong> Администратор всегда имеет доступ ко всем записям/страницам."
+
+#: includes/language.php:287
+msgid "Member of %s other user groups"
+msgstr "Член %s других групп пользователей"
+
+#: includes/language.php:286
+msgid "Full access"
+msgstr "Полный доступ"
+
+#: includes/language.php:277
+msgid "All testers and all others I forgot"
+msgstr "Все тестеры и все остальные я забыл"
+
+#: includes/language.php:271
+msgid "Thanks"
+msgstr "Благодарности"
+
+#: includes/language.php:260
+msgid "How to support me?"
+msgstr "Как поддержать меня?"
+
+#: includes/language.php:257
+msgid "About"
+msgstr "Детали"
+
+#: includes/language.php:238
+msgid "Update network wide"
+msgstr "Обновить сеть сайтов."
+
+#: includes/language.php:237
+msgid "Update current blog"
+msgstr "Обновить текущий блог"
+
+#: includes/language.php:235
+msgid "User Access Manager database was updated successfully"
+msgstr "База данных User Access Manager успешно обновлена"
+
+#: includes/language.php:234
+msgid "User Access Manager was reset successfully"
+msgstr "User Access Manager был успешно сброшен "
+
+#: includes/language.php:232
+msgid "Updates the database of the User Access Manager. Please backup your database before you perform the update."
+msgstr "Обновление базы данных для User Access Manager. Пожалуйста, сделайте копию своей базы данных прежде, чем Вы выполните обновление."
+
+#: includes/language.php:231
+msgid "Update User Access Manager database"
+msgstr "Обновление базы данных User Access Manager database"
+
+#: includes/language.php:229
+msgid "Warning: The reset of the User Access Manager can not be undone. All settings and user groups will permanently lost."
+msgstr "Предупреждение: сброс User Access Manager не может быть отменен. Все настройки и группы пользователей будут безвозвратно утеряны."
+
+#: includes/language.php:227
+msgid "Reset User Access Manager"
+msgstr "Сброс UAM"
+
+#: includes/language.php:225
+msgid "Setup"
+msgstr "Установка"
+
+#: includes/language.php:214
+msgid "User group edit successfully."
+msgstr "Группа пользователей успешно изменена."
+
+#: includes/language.php:213
+msgid "Group(s) was deleted successfully."
+msgstr "Группа (ы) была удалена успешно."
+
+#: includes/language.php:212
+msgid "Group name can not be empty."
+msgstr "Название группы не может быть пустым."
+
+#: includes/language.php:211
+msgid "Group was added successfully."
+msgstr "Группа была успешно добавлена."
+
+#: includes/language.php:210
+msgid "The write access."
+msgstr "Доступ для записи."
+
+#: includes/language.php:208
+msgid "The read access."
+msgstr "Доступ для чтения."
+
+#: includes/language.php:206
+msgid "Type in the IP ranges of users which are join these groups by their IP address without login. Set ranges like \"BEGIN\"-\"END\", separate ranges by using \";\", single IPs are also allowed. Example: 192.168.0.1-192.168.0.10;192.168.0.20-192.168.0.30"
+msgstr "Введите диапазоны IP пользователей которым разрешено входить в эти группы без авторизации на сайте. Устанавливайте диапазон типа НАЧАЛО-КОНЕЦ, разделяя диапазоны точкой с запятой. Также можно использовать единичные IP. Например: 192.168.0.1-192.168.0.10;192.168.0.20-192.168.0.30"
+
+#: includes/language.php:205 includes/language.php:215
+msgid "IP range"
+msgstr "Диапазон IP"
+
+#: includes/language.php:204
+msgid "The description of the group."
+msgstr "Описание группы."
+
+#: includes/language.php:203
+msgid "User group description"
+msgstr "Описание группы пользователей"
+
+#: includes/language.php:202
+msgid "The name is used to identify the access user group."
+msgstr "Имя используется, чтобы проверить права доступа группы пользователей."
+
+#: includes/language.php:201
+msgid "User group name"
+msgstr "Имя группы пользователей"
+
+#: includes/language.php:200
+msgid "Edit user group"
+msgstr "Редактировать группу пользователей"
+
+#: includes/language.php:199
+msgid "Add user group"
+msgstr "Добавить группу пользователей"
+
+#: includes/language.php:198
+msgid "Add"
+msgstr "Добавить"
+
+#: includes/language.php:197
+msgid "Update group"
+msgstr "Группа обновления"
+
+#: includes/language.php:196
+msgid "Delete"
+msgstr "Удалить"
+
+#: includes/language.php:195 includes/language.php:209
+msgid "Write access"
+msgstr "Доступ для записи"
+
+#: includes/language.php:194 includes/language.php:207
+msgid "Read access"
+msgstr "Доступ для чтения"
+
+#: includes/language.php:193
+msgid "Description"
+msgstr "Описание"
+
+#: includes/language.php:192
+msgid "Name"
+msgstr "Имя"
+
+#: includes/language.php:191
+msgid "Role affiliation"
+msgstr "Ролевое присоединение"
+
+#: includes/language.php:185
+msgid "Settings updated."
+msgstr "Настройки обновлены."
+
+#: includes/language.php:184
+msgid "Update settings"
+msgstr "Обновить настройки"
+
+#: includes/language.php:170
+msgid "Selecting \"Yes\" will show the defined text at \"%s\" behind the post/page to an logged in admin to show him which posts/pages are locked if he visits his blog."
+msgstr "Выбор \"Да\"  покажет определенный текст в \"%s\" за записью или страницей авторизованному администратору при просмотре блога, уведомляя о том что запись или страница ограничены к просмотру."
+
+#: includes/language.php:169
+msgid "Show admin hint at Posts"
+msgstr "Показывать администраторскую подсказку на Сообщениях"
+
+#: includes/language.php:168
+msgid "The text which will shown behind the post/page."
+msgstr "Текст который будет показан за записью или страницей."
+
+#: includes/language.php:167
+msgid "Admin hint text"
+msgstr "Администраторский текст подсказки"
+
+#: includes/language.php:166
+msgid "Selecting \"Yes\" will lock all child posts/pages of a post/page if a user has no access to the parent page. Note: Setting this option to \"No\" could result in display errors relating to the hierarchy."
+msgstr "Выбор \"Да \" заблокирует все дочерние сообщения/страницы сообщений/страниц, если у пользователя не будет доступа к родительской странице. Примечание: Установка этой опции в \"Нет \" не может привести к ошибкам отображения, касающимся иерархии."
+
+#: includes/language.php:165
+msgid "Lock recursive"
+msgstr "Рекурсивная блокировка"
+
+#: includes/language.php:164
+msgid "Custom URL: "
+msgstr "Пользовательский URL:"
+
+#: includes/language.php:163
+msgid "Custom page: "
+msgstr "Пользовательская страница:"
+
+#: includes/language.php:161
+msgid "To blog start page"
+msgstr "На заглавную страницу блога"
+
+#: includes/language.php:160
+msgid "Setup what happen if a user visit a post/page with no access."
+msgstr "Установки, если пользовательское посещает сообщение/страницу без доступа."
+
+#: includes/language.php:159
+msgid "Redirect user"
+msgstr "Перенаправить пользователя"
+
+#: includes/language.php:136
+msgid "Selecting \"Yes\" will hide empty %s which are containing only empty childes or no childes."
+msgstr "Выбор \"Да\" спрячет пустые %s с пустыми дочерними элементами или без них."
+
+#: includes/language.php:158
+msgid "Selecting \"Yes\" will also protect your feed entries."
+msgstr "Выбор \"Да \" также защитит Ваши записи канала."
+
+#: includes/language.php:157
+msgid "Protect Feed"
+msgstr "Защита RSS канала"
+
+#: includes/language.php:156
+msgid "Here you will find all other settings"
+msgstr "Здесь Вы найдете другие настройки"
+
+#: includes/language.php:155
+msgid "Other settings"
+msgstr "Другие настройки"
+
+#: includes/language.php:127
+msgid "Subscriber"
+msgstr "Подписчик"
+
+#: includes/language.php:126
+msgid "Contributor"
+msgstr "Участник"
+
+#: includes/language.php:125
+msgid "Author"
+msgstr "Автор"
+
+#: includes/language.php:124
+msgid "Editor"
+msgstr "Редактор"
+
+#: includes/language.php:123
+msgid "Administrator"
+msgstr "Администратор"
+
+#: includes/language.php:122
+msgid "All user with a role equal or higher to this has full access."
+msgstr "Все пользователи с ролью равной или выше этой имеют полный доступ."
+
+#: includes/language.php:121
+msgid "Minimum user role with full access"
+msgstr "Минимальная пользовательская роль с полным доступом"
+
+#: includes/language.php:120
+msgid "If \"Yes\" is selected author are able to restrict the content by adding it to their groups."
+msgstr "Если выбрать \"Да\", авторы могут ограничивать доступ к содержимому добавляя его в собственные группы."
+
+#: includes/language.php:119
+msgid "Authors can add content to their own groups"
+msgstr "Авторы могут добавлять содержимое с свои собственные группы"
+
+#: includes/language.php:118
+msgid "If \"Yes\" is selected author will always have full access to their own posts or pages."
+msgstr "Если выбрать \"Да\", у авторов всегда будет полный доступ к собственным записям и страницам."
+
+#: includes/language.php:117
+msgid "Authors always has access to own posts/pages"
+msgstr "У авторов всегда есть доступ к собственным записям и страницам"
+
+#: includes/language.php:116
+msgid "Here you will find the settings for authors"
+msgstr "Здесь Вы найдете настройки для авторов"
+
+#: includes/language.php:115
+msgid "Authors settings"
+msgstr "Авторские настройки"
+
+#: includes/language.php:111
+msgid "fopen"
+msgstr "fopen"
+
+#: includes/language.php:110
+msgid "Normal"
+msgstr "Обычный"
+
+#: includes/language.php:107
+msgid "Selecting the type for downloading. <strong>Note:</strong> For using fopen you need \"safe_mode = off\"."
+msgstr "Выбор типа для того, чтобы загрузить. <strong>Примечание:</strong>Для использования fopen Вам нужно \"safe_mode = off\"."
+
+#: includes/language.php:106
+msgid "Download type"
+msgstr "Тип загрузки"
+
+#: includes/language.php:105
+msgid "Use the password of the current logged in admin."
+msgstr "Используете пароль текущего авторизованного администратора."
+
+#: includes/language.php:104
+msgid "Use a random generated password."
+msgstr "Используйте случайный сгенерированный пароль."
+
+#: includes/language.php:103
+msgid "Set up the password for the .htaccess access. This password is only needed if you need a direct access to your files."
+msgstr "Установите пароль для.htaccess доступа. Этот пароль необходим только если Вы нуждаетесь в прямом доступе к своим файлам."
+
+#: includes/language.php:102
+msgid ".htaccess password"
+msgstr ".htaccess пароль"
+
+#: includes/language.php:98
+msgid "Lock all files, type in file types which you will lock if the post/page is locked or define file types which will not be locked. <strong>Note:</strong> If you have no problems use all to get the maximum security."
+msgstr "Блокировать все файлы, типы файлов для блокировки если запись/страница ограничены к просмотру или определите типы файлов которые не будут блокироваться. <strong>Заметка:</strong> если не возникает проблем для максимальной защиты блокируйте все файлы."
+
+#: includes/language.php:97
+msgid "Locked file types"
+msgstr "Заблокированные типы файлов"
+
+#: includes/language.php:101
+msgid "File types not to lock: "
+msgstr "Типы файлов которые не будут блокированы:"
+
+#: includes/language.php:100
+msgid "File types to lock: "
+msgstr "Типы файлов для блокировки:"
+
+#: includes/language.php:91
+msgid "If you select \"Yes\" all files will locked by a .htaccess file and only users with access can download files. <br/><strong style=\"color:red;\">Note: If you activate this option the plugin will overwrite a '.htaccess' file at the upload folder, if you use already one to protect your files. Also if you have no permalinks activated your upload dir will protect by a '.htaccess' with a random password and all old media files insert in a previous post/page will not work anymore. You have to update your posts/pages (not necessary if you have permalinks activated).</strong>"
+msgstr "Если выберете \"Да\", все файлы будут заблокированы в .htaccess  и только пользователи с доступом смогут их загружать. <br/><strong style=\"color:red;\">Заметка: если Вы включите эту настройку, плагин перезапишет .htaccess файл в папке загрузок. Если у Вас не включены ЧПУ, то папка загрузок будет закрыта случайным паролем и все медиафайлы в старых записях и страницах перестанут работать. Вам потребуется обновить записи и страницы (не нужно если у Вас включены ЧПУ)</strong>"
+
+#: includes/language.php:82
+msgid "Lock files"
+msgstr "Файлы блокировки"
+
+#: includes/language.php:81
+msgid "Set up the behaviour of files"
+msgstr "Установить поведение файлов"
+
+#: includes/language.php:80
+msgid "File settings"
+msgstr "Настройки файла"
+
+#: includes/language.php:51
+msgid "Displayed text as comment text if user has no access"
+msgstr "Отображаемый текст в месте текста комментария, если у пользователя нет доступа"
+
+#: includes/language.php:43
+msgid "Displayed text as title if user has no access"
+msgstr "Отображается текст вместо заголовка, если у пользователя нет доступа"
+
+#: includes/language.php:72
+msgid "Hide %s comments"
+msgstr "Скрыть %s комментарии"
+
+#: includes/language.php:71
+msgid "Displayed text as %s comment text if user has no access"
+msgstr "Показать текст как текст комментария %s, если у пользователя нет доступа"
+
+#: includes/language.php:70
+msgid "%s comment text"
+msgstr "%s текст комментария"
+
+#: includes/language.php:49 includes/language.php:69
+msgid "Selecting \"Yes\" will hide %s if the user has no access."
+msgstr "Выбор \"Да \" скроет %s , если у пользователя нет доступа."
+
+#: includes/language.php:77
+msgid "Shows the %s content before the &lt;!--more--&gt; tag and after that the defined text at \"%s content\". If no &lt;!--more--&gt; is set the defined text at \"%s content\" will shown."
+msgstr "Показывать содержимое %s перед &lt;!--more--&gt;тегом и после этого определенный текст в \"%s\". Если &lt;!--more--&gt;установлен, текст в \"%s\" будет показан."
+
+#: includes/language.php:76
+msgid "Show %s content before &lt;!--more--&gt; tag"
+msgstr "Показывать содержимое %s перед &lt;!--more--&gt; "
+
+#: includes/language.php:47 includes/language.php:67
+msgid "Content displayed if user has no access. You can add an login-form by adding the keyword <strong>[LOGIN_FORM]</strong>. This form will shown on single %s, otherwise a link will shown."
+msgstr "Содержимое отображается, если пользователь не имеет доступа. Вы можете добавить логин -форму, добавив ключевое слово <strong>[LOGIN_FORM]</strong>. Эта форма будет показана на отдельных %s, в противном случае будет показана ссылка."
+
+#: includes/language.php:65
+msgid "Selecting \"Yes\" will show the text which is defined at \"%s title\" if user has no access."
+msgstr "При выборе «Да» будет отображаться текст, определенный в «%s заголовке», если у пользователя нет доступа"
+
+#: includes/language.php:63
+msgid "Displayed text as %s title if user has no access"
+msgstr "Показывать текст как %s название, если у пользователя нет прав доступа"
+
+#: includes/language.php:33
+msgid "Settings"
+msgstr "Настройки"
+
+#: includes/language.php:29
+msgid "No"
+msgstr "Нет"
+
+#: includes/language.php:28
+msgid "Yes"
+msgstr "Да"
+
+#: includes/language.php:26
+msgid "Only group users"
+msgstr "Только пользователи группы"
+
+#: includes/language.php:20
+msgid "Please update the database of the User Access Manager. <a href=\"%s\">Click here to proceed</a>"
+msgstr "Пожалуйста, обновите базу данных User Access Manager.<a href=\"%s\">Щелчок здесь, чтобы продолжить</a>"
+
+#: includes/language.php:18
+msgid "Sorry you need at least Wordpress version 3.0 to use the User Access Manager. Your current Wordpress version is %s."
+msgstr "Вам требуется как минимум WordPress 3.0 для использования User Access Manager. У Вас %s. "
+
+#: includes/language.php:281
+msgid "Access"
+msgstr "Доступ"
+
+#: includes/language.php:181
+msgid "Sorry no rights to view comments!"
+msgstr "Извините, вы не имете прав на просмотр коментариев!"
+
+#: includes/language.php:180
+msgid "Sorry you have no rights to view this entry!"
+msgstr "Извините, вы не имете прав на просмотр этого материала!"
+
+#: includes/language.php:179
+msgid "No rights!"
+msgstr "Нет прав!"

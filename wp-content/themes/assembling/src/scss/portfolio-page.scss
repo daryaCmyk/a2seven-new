@@ -1,0 +1,181 @@
+@import 'includes/variables';
+@import 'includes/mixins';
+
+.project {
+    &__wrap {
+        margin-bottom: rem(120);
+    }
+
+    &__tags {
+        display: flex;
+        margin-bottom: rem(30);
+
+        @media (max-width: 1279px) {
+            margin-bottom: calcFluid(20, 30, 375, 1920);
+        }
+
+        @media (min-width: 568px) {
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 567px) {
+            overflow: auto;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            margin-right: -20px;  
+
+            &::-webkit-scrollbar {
+                    width: 0;
+                    height: 0;
+            }
+        }
+        
+
+        &-item {
+            font-weight: 600;
+            font-size: rem(24);
+            line-height: 160%;
+            color: #A5A5A5;
+            cursor: pointer;
+            transition: $transition;
+            white-space: nowrap;
+            border-bottom: 2px solid transparent;
+            height: 100%;
+
+            &:not(:last-child) {
+                margin-right: rem(30);
+                margin-bottom: rem(30);
+
+                @media (max-width: 1279px) {
+                    margin-right: calcFluid(20, 30, 375, 1920);
+                    margin-bottom: calcFluid(20, 30, 375, 1920);
+                }
+            }
+
+            &.tags-item--active {
+                color: #272727;
+            }
+
+            @media (min-width: 1024px) {
+                &:not(.tags-item--active):hover {
+                    color: #272727;
+                    border-color: #272727;
+                }
+            }
+
+            @media (max-width: 567px) {
+                &:last-child {
+                    margin-right: calcFluid(20, 30, 375, 1920);
+                }
+            }
+        }
+    }
+
+    &-grid {
+        columns: 2;
+        column-gap: 18%;
+        row-gap: rem(80);
+
+        @media (max-width: 1279px) {
+            column-gap: calcFluid(40, 248, 767, 1920);
+        }
+
+        &:last-child {
+            margin-bottom: rem(-80);
+
+            @media (max-width: 1279px) {
+                margin-bottom: calcFluid(-40, -80, 375, 1920);
+            }
+        }
+    }
+
+    &-item {
+        display: block;
+        overflow: hidden;
+        -webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+        break-inside: avoid;
+        break-inside: avoid-column;
+        padding-bottom: rem(80);
+
+        @media (max-width: 1279px) {
+            padding-bottom: calcFluid(40, 80, 375, 1920);
+        }
+
+        $this: &;
+
+        &__img {
+            width: 100%;
+            background-size: cover;
+            margin-bottom: rem(40);
+            @media (max-width: 1279px) {
+                margin-bottom: calcFluid(20, 40, 375, 1920);
+            }
+        }
+
+        &:nth-child(4n + 2), &:nth-child(4n + 3) {
+            #{$this}__img {
+                height: rem(360);
+
+                @media (max-width: 1279px) {
+                    height: calcFluid(211, 360, 375, 1920);
+                }
+            }
+        }
+
+        &:nth-child(4n + 1), &:nth-child(4n + 4) {
+            #{$this}__img {
+                height: rem(700);
+
+                @media (max-width: 1279px) {
+                    height: calcFluid(410, 700, 375, 1920);
+                }
+            }
+        }
+
+        &__title {
+            @include font-h4;
+            transition: $transition;
+            display: inline;
+            border-bottom: 2px solid transparent;
+            line-height: normal;
+        }
+
+        &__tag {
+            padding: rem(6) rem(12);
+            background: rgba(241, 241, 241, 0.6);
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: rem(16);
+            line-height: 160%;
+            color: #272727;
+            margin-bottom: rem(10);
+            text-transform: uppercase;
+
+            &-wrap {
+                padding: rem(40) rem(19);
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            &:not(:last-child) {
+                margin-right: rem(10);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            &:hover {
+                #{$this}__title {
+                    border-color: #272727;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    .project-grid {
+        columns: 1;
+    }
+}

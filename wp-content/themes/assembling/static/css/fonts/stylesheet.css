@@ -1,0 +1,43 @@
+@font-face {
+	font-family: 'Manrope';
+	src:
+	url('./Manrope/Manrope-Bold.eot?#iefix') format('embedded-opentype'),
+	url('./Manrope/Manrope-Bold.woff') format('woff'),
+	url('./Manrope/Manrope-Bold.woff2') format('woff2'),
+	url('./Manrope/Manrope-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Manrope';
+	src:
+	url('./Manrope/Manrope-Semibold.eot?#iefix') format('embedded-opentype'),
+	url('./Manrope/Manrope-Semibold.woff') format('woff'),
+	url('./Manrope/Manrope-Semibold.woff2') format('woff2'),
+	url('./Manrope/Manrope-Semibold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Manrope';
+	src:
+	url('./Manrope/Manrope-Medium.eot?#iefix') format('embedded-opentype'),
+	url('./Manrope/Manrope-Medium.woff') format('woff'),
+	url('./Manrope/Manrope-Medium.woff2') format('woff2'),
+	url('./Manrope/Manrope-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Manrope';
+	src:
+	url('./Manrope/Manrope-Regular.eot?#iefix') format('embedded-opentype'),
+	url('./Manrope/Manrope-Regular.woff') format('woff'),
+	url('./Manrope/Manrope-Regular.woff2') format('woff2'),
+	url('./Manrope/Manrope-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
