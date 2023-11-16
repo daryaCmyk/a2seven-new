@@ -147,9 +147,8 @@
     &.disabled {
         background: rgba(18, 18, 18, 0.5);
         pointer-events: none;
-
         span {
-            opacity: 0;
+            opacity: 0.5;
         }
     }
 }

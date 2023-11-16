@@ -164,6 +164,37 @@ function indexForm() {
 	        const button = form[i].querySelector('.contact-form__button');
 	        const formsTarget = form[i];
 
+			let names = formsTarget.querySelector('.contact-field__input[name="name"]');
+			let email = formsTarget.querySelector('.contact-field__input[name="email"]');
+			let phone = formsTarget.querySelector('.contact-field__input[name="phone"]');
+			let message = formsTarget.querySelector('.contact-field__input[name="message"]');
+			let file = formsTarget.querySelector('.contact-field__file');
+
+			function disableButton() {
+				button.classList.add('disabled');
+				button.disabled = true;
+			}
+
+			function enableButton() {
+				button.classList.remove('disabled');
+				button.disabled = false;
+			}
+
+			// Отключаем кнопку при загрузке страницы
+			disableButton();
+
+			// Проверяем состояние полей и включаем кнопку при необходимости
+			function checkFields() {
+				if (names.value.length !== 0 && validateEmail(email)) {
+					enableButton();
+				} else {
+					disableButton();
+				}
+			}
+
+			names.addEventListener('input', checkFields);
+			email.addEventListener('input', checkFields);
+
 	        button.addEventListener('click', async event => {
 
 	            event.preventDefault();
@@ -194,11 +225,6 @@ function indexForm() {
 
                 button.appendChild(div);
 
-				let names = formsTarget.querySelector('.contact-field__input[name="name"]');
-				let email = formsTarget.querySelector('.contact-field__input[name="email"]');
-				let phone = formsTarget.querySelector('.contact-field__input[name="phone"]');
-				let message = formsTarget.querySelector('.contact-field__input[name="message"]');
-				let file = formsTarget.querySelector('.contact-field__file');
 
 
 				if((names.value.length !== 0) && validateEmail(email) && !file.classList.contains('error')){
